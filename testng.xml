@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API-DB Validation Suite">
+  <listeners>
+    <listener class-name="com.suite.listeners.ExtentListener"/>
+  </listeners>
+  <test name="User API vs Database">
+    <classes>
+      <class name="com.suite.tests.UserReadValidationTest"/>
+      <class name="com.suite.tests.UserWriteValidationTest"/>
+    </classes>
+  </test>
+</suite>
